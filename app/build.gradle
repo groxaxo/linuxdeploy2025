@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'ru.meefik.linuxdeploy'
     compileSdkVersion 29
     buildToolsVersion '29.0.2'
 

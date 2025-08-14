@@ -71,9 +71,6 @@ public class RepositoryProfileAdapter extends RecyclerView.Adapter<RepositoryPro
                     case "archlinux":
                         iconRes = R.raw.archlinux;
                         break;
-                    case "centos":
-                        iconRes = R.raw.centos;
-                        break;
                     case "debian":
                         iconRes = R.raw.debian;
                         break;

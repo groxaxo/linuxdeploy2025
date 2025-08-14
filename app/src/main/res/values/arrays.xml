@@ -231,7 +231,6 @@
     <string-array name="distrib_values" translatable="false">
         <item>alpine</item>
         <item>archlinux</item>
-        <item>centos</item>
         <item>debian</item>
         <item>fedora</item>
         <item>kali</item>
@@ -243,7 +242,6 @@
     <string-array name="distrib_entries" translatable="false">
         <item>Alpine</item>
         <item>Arch</item>
-        <item>CentOS</item>
         <item>Debian</item>
         <item>Fedora</item>
         <item>Kali</item>
@@ -334,18 +332,6 @@
     <string-array name="fedora_arch_values" translatable="false">
         <item>armhfp</item> <!-- f19 and later -->
         <item>aarch64</item> <!-- f21 and later -->
-        <item>i386</item>
-        <item>x86_64</item>
-    </string-array>
-
-    <!-- CentOS -->
-
-    <string-array name="centos_suite_values" translatable="false">
-        <item>7</item>
-    </string-array>
-    <string-array name="centos_arch_values" translatable="false">
-        <item>armhfp</item>
-        <item>aarch64</item>
         <item>i386</item>
         <item>x86_64</item>
     </string-array>
