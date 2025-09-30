@@ -25,6 +25,23 @@ The app is available for download in Google Play and GitHub.
 - Desktop environment: XTerm, LXDE, Xfce, MATE, other (manual configuration)
 - Supported languages: multilingual interface
 
+## Ubuntu Support (2025 Update)
+
+This fork adds support for modern Ubuntu LTS releases:
+
+- ✅ **Ubuntu 24.04 LTS (Noble Numbat)** - Supported until 2029
+- ✅ **Ubuntu 22.04 LTS (Jammy Jellyfish)** - Supported until 2027
+- ✅ **Ubuntu 20.04 LTS (Focal Fossa)** - Supported until 2025
+- ✅ Ubuntu 18.04 LTS (Bionic Beaver) - Legacy support
+
+**Why this matters:**
+- Access to latest security patches and updates
+- Modern package versions and features
+- Better ARM64 optimization in newer releases
+- Long-term support for stable deployments
+
+See [UPGRADE_PLAN.md](UPGRADE_PLAN.md) for technical details on the implementation.
+
 ## FAQ
 
 > Do not work update operating environment or errors appear in debug mode: "Permission denied", "Socket operation on non-socket" or other.

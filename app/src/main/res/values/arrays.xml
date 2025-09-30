@@ -300,10 +300,13 @@
     <!-- Ubuntu -->
 
     <string-array name="ubuntu_suite_values" translatable="false">
-        <item>precise</item>
-        <item>trusty</item>
-        <item>xenial</item>
-        <item>bionic</item>
+        <item>noble</item>   <!-- 24.04 LTS -->
+        <item>jammy</item>   <!-- 22.04 LTS -->
+        <item>focal</item>   <!-- 20.04 LTS -->
+        <item>bionic</item>  <!-- 18.04 LTS -->
+        <item>xenial</item>  <!-- 16.04 LTS -->
+        <item>trusty</item>  <!-- 14.04 LTS -->
+        <item>precise</item> <!-- 12.04 LTS -->
     </string-array>
     <string-array name="ubuntu_arch_values" translatable="false">
         <item>armel</item> <!-- precise only -->
