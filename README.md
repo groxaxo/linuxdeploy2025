@@ -32,15 +32,8 @@ This fork adds support for modern Ubuntu LTS releases:
 - ✅ **Ubuntu 24.04 LTS (Noble Numbat)** - Supported until 2029
 - ✅ **Ubuntu 22.04 LTS (Jammy Jellyfish)** - Supported until 2027
 - ✅ **Ubuntu 20.04 LTS (Focal Fossa)** - Supported until 2025
-- ✅ Ubuntu 18.04 LTS (Bionic Beaver) - Legacy support
 
-**Why this matters:**
-- Access to latest security patches and updates
-- Modern package versions and features
-- Better ARM64 optimization in newer releases
-- Long-term support for stable deployments
-
-See [UPGRADE_PLAN.md](UPGRADE_PLAN.md) for technical details on the implementation.
+You can now install current Ubuntu versions with the latest security patches, modern packages, and better ARM64 optimization. Simply select Ubuntu from the distribution list and choose your preferred version.
 
 ## FAQ
 
