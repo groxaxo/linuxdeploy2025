@@ -51,6 +51,17 @@ This fork adds support for modern Ubuntu LTS releases with improved deployment l
 
 **Note:** Ubuntu 24.04 (Noble) and later versions do not support i386 architecture.
 
+## Building from Source
+
+This fork includes customized deployment scripts in the `custom_env/` directory. Before building:
+
+```bash
+# Apply custom Ubuntu deployment scripts
+cp -r custom_env/include/bootstrap/ubuntu/* app/src/main/assets/env/include/bootstrap/ubuntu/
+```
+
+See `custom_env/README.md` for details about the customizations.
+
 Donations:
 
 - E-Money: <https://meefik.github.io/donate>
