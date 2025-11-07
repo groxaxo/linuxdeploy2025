@@ -30,7 +30,12 @@ To apply these changes to the main application:
 1. The submodule at `app/src/main/assets/env` points to the upstream `meefik/linuxdeploy-cli` repository
 2. This custom version should be copied over the submodule files before building:
    ```bash
-   cp -r custom_env/include/bootstrap/ubuntu/* app/src/main/assets/env/include/bootstrap/ubuntu/
+   mkdir -p app/src/main/assets/env/include/bootstrap/ubuntu/
+   cp custom_env/include/bootstrap/ubuntu/* app/src/main/assets/env/include/bootstrap/ubuntu/
+   ```
+   Or using rsync:
+   ```bash
+   rsync -av custom_env/include/bootstrap/ubuntu/ app/src/main/assets/env/include/bootstrap/ubuntu/
    ```
 
 ### Maintenance

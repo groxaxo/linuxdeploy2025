@@ -53,11 +53,18 @@ This fork adds support for modern Ubuntu LTS releases with improved deployment l
 
 ## Building from Source
 
-This fork includes customized deployment scripts in the `custom_env/` directory. Before building:
+This fork includes customized deployment scripts in the `custom_env/` directory. Before building, apply the custom Ubuntu deployment scripts:
 
 ```bash
 # Apply custom Ubuntu deployment scripts
-cp -r custom_env/include/bootstrap/ubuntu/* app/src/main/assets/env/include/bootstrap/ubuntu/
+mkdir -p app/src/main/assets/env/include/bootstrap/ubuntu/
+cp custom_env/include/bootstrap/ubuntu/* app/src/main/assets/env/include/bootstrap/ubuntu/
+```
+
+Alternatively, you can use rsync for more reliable synchronization:
+
+```bash
+rsync -av custom_env/include/bootstrap/ubuntu/ app/src/main/assets/env/include/bootstrap/ubuntu/
 ```
 
 See `custom_env/README.md` for details about the customizations.

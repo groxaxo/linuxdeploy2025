@@ -41,6 +41,7 @@ apt_repository()
             echo "deb ${SOURCE_PATH} ${SUITE}-security main universe multiverse" >> "${CHROOT_DIR}/etc/apt/sources.list"
             echo "deb ${SOURCE_PATH} ${SUITE}-updates main universe multiverse" >> "${CHROOT_DIR}/etc/apt/sources.list"
             ;;
+        # Note: precise (12.04) is excluded as it's EOL and no longer receives security updates
     esac
     # Fix for upstart (only needed for older versions)
     if [ -e "${CHROOT_DIR}/sbin/initctl" ]; then
