@@ -309,10 +309,10 @@
         <item>precise</item> <!-- 12.04 LTS -->
     </string-array>
     <string-array name="ubuntu_arch_values" translatable="false">
-        <item>armel</item> <!-- precise only -->
+        <item>armel</item>  <!-- precise only -->
         <item>armhf</item>
-        <item>arm64</item> <!-- trusty and later -->
-        <item>i386</item>
+        <item>arm64</item>  <!-- trusty and later -->
+        <item>i386</item>   <!-- NOT supported in noble (24.04) and later -->
         <item>amd64</item>
     </string-array>
 
