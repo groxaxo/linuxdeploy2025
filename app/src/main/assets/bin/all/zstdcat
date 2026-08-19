@@ -1,0 +1,16 @@
+#!/system/bin/sh
+# zstdcat for Linux Deploy's bundled debootstrap.
+# Ubuntu 24.04+ (noble) ships .deb data/control members compressed with zstd;
+# the bundled busybox has no zstd applet. Delegate to Termux's zstd, which is
+# present on any device that uses Termux. Self-contained: safe under su.
+TERMUX_PREFIX="/data/data/com.termux/files/usr"
+if [ -x "${TERMUX_PREFIX}/bin/zstd" ]; then
+    export LD_LIBRARY_PATH="${TERMUX_PREFIX}/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+    exec "${TERMUX_PREFIX}/bin/zstd" -dc "$@"
+fi
+# Fallback: system toybox/busybox zstd applet if one ever ships
+if command -v zstd >/dev/null 2>&1; then
+    exec zstd -dc "$@"
+fi
+echo "zstdcat: no zstd implementation found (install 'pkg install zstd' in Termux)" >&2
+exit 1

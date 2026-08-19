@@ -332,7 +332,9 @@ public class EnvUtils {
         String scriptFile = PrefStore.getBinDir(c) + "/linuxdeploy";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(scriptFile))) {
-            bw.write("#!" + PrefStore.getShell(c) + "\n");
+            // Use the system shell: the bundled busybox "sh" applet symlink only
+            // exists after busybox --install succeeds, which itself needs a shell.
+            bw.write("#!/system/bin/sh\n");
             bw.write("PATH=" + PrefStore.getPath(c) + ":$PATH\n");
             bw.write("ENV_DIR=\"" + PrefStore.getEnvDir(c) + "\"\n");
             bw.write(". \"${ENV_DIR}/cli.sh\"\n");
